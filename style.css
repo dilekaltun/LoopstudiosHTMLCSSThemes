@@ -1,22 +1,134 @@
 html {
   scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-header {
-  background: url('image-hero.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 650px;
+.btn-div-footer {
+  padding-right: 220px;
+  padding-top:25px ;
+}
+.font-alata{
+  font-family: 'Alata', sans-serif;
+}
+.font-josefin{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.back-color{
+  background-color: #fff;
+}
+.font-15{
+  font-size: 15px;
+}
+.card-css{
+  position: absolute;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  height: 60px;
+}
+.color-w{
+    color: #ffffff;
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .nav__listfooter{
+    padding-left: 100px!important;
+  }
+  .btn-div-footer{
+    padding-right: 0px!important;
+  }
+  .btn-div-icon {
+    padding-right: 220px;
+    padding-top:40px!important;
+  }
+  .footer-text {
+    padding-top:27px!important;
+    line-height: 21px;
+    /* identical to box height */
+    width: 500px;
+    color: #696969;
+  }
+  .square_home{
+    
+    max-height: 100%;
+    max-width: 70%;
+    margin-top:-130px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    left:110px!important;
+  }
+  .square_home p {
+    
+    font-size: 50px!important;
 }
 
+.side {
+  width: 309px !important;
+  height: 212px !important;
+  top:650px!important;
+  left: 280px !important;
+}
+
+.title-side {
+  padding-left: 50px!important;
+  font-weight: 300;
+  font-size: 30px !important;
+  line-height: 30px !important;
+  text-align: center!important;
+ 
+}
+
+.content-side {
+  height: 175px !important;
+  line-height: 25px !important;
+  padding-left: 0px !important;
+  padding-right: 250px !important;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.imagecenter {
+  position: relative;
+  width: 309px !important;
+  height: 212px !important;
+  left: 280px !important;
+  top: 450px !important;
+}
+
+.one{
+  min-height: 550px;
+}
+
+.wrapper{
+  display: grid!important;
+  margin-bottom: 0px!important;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 260px))!important;
+  color: #444;
+  padding: 0 195px!important;
+  
+}
+
+
+.box h4 {
+  display: none!important;
+ 
+}
+}
+/* media only 800-1200 end*/
+.nav {
+  height: 5rem;
+  width: 100%;
+  display: block;
+  justify-content: flex-start;
+  z-index: 10;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+  position: fixed;
+}
 .square_home {
   position: absolute;
   width: 642px;
@@ -29,50 +141,61 @@ header {
 }
 .square_home p {
   padding-left: 50px;
-  font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 70px;
   line-height: 70px;
   padding-top: 39px;
-  color: #ffffff;
 }
-.twotitle {
-  width: 1396px;
-  height: 248px;
-  padding-left: 190px;
-  padding-top: 90px;
 
-  font-family: 'Josefin Sans', sans-serif;
+.flex-container {
+  list-style: none;
+  display: flex;
+  margin: 50px 0;
+}
+
+.flex-footer {
+  list-style: none;
+  display: flex;
+  
+}
+
+
+.space-between { 
+  justify-content: space-between; 
+}  
+.title-h1{
   font-weight: 300;
-  font-size: 48px;
-  line-height: 48px;
-  /* identical to box height */
-
-  color: #000000;
+  font-size: 30px;
+  line-height: 20px;
+  margin-left: 200px;
 }
-.twobutton {
-  position: absolute;
+.btn{
+  color: black;
   width: 138px;
   height: 34px;
-  left: 1135px;
-  top: 1530px;
-  background-color: white;
-  color: black;
-  font-family: 'Alata', sans-serif;
-}
-.twobutton:hover {
+} 
+.btn:hover{
   background-color: black;
   color: white;
   cursor: pointer;
 }
+.btn-div {
+  padding-right: 220px;
+  padding-top:20px;
+}
+
+.btn-div-icon {
+  padding-right: 220px;
+  padding-top:20px;
+}
+
 
 .wrapper {
   display: grid;
   margin-bottom: 333px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
   grid-gap: 10px;
-  background-color: #fff;
   color: #444;
   padding: 0 195px;
 }
@@ -87,137 +210,107 @@ header {
   left: 165px;
 }
 
+.box img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.box:hover img {
+  opacity:0.8;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.box:hover h4 {
+  opacity:0.8;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
 .boxtextdeep {
-  position: absolute;
   width: 106px;
-  height: 60px;
   left: 204px;
-  top: 2054px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2000px;
 }
 
 .boxtextnight {
-  position: absolute;
   width: 131px;
-  height: 60px;
   left: 490px;
-  top: 2054px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2000px;
 }
 
 .boxtextsoccer {
-  position: absolute;
   width: 244px;
-  height: 60px;
   left: 761px;
-  top: 2054px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2000px;
 }
-.boxtextgrid {
-  position: absolute;
+.boxtextgrid { 
   width: 77px;
-  height: 60px;
   left: 1033px;
-  top: 2054px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2000px;
 }
 .boxtextabove {
-  position: absolute;
   width: 254px;
-  height: 60px;
   left: 195px;
-  top: 2535px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2480px;
 }
 .boxtextpocket {
-  position: absolute;
   width: 158px;
-  height: 60px;
   left: 480px;
-  top: 2535px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2480px;
 }
 .boxtextcuriosity {
-  position: absolute;
   width: 170px;
-  height: 60px;
   left: 755px;
-  top: 2535px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2480px;
 }
 .boxtextfish {
-  position: absolute;
   width: 133px;
-  height: 60px;
   left: 1023px;
-  top: 2535px;
-
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-
-  color: #ffffff;
+  top: 2480px;
 }
 
 .footer {
   display: none;
 }
+.btn-div-mobil {
+  display: none;
+}
+
+
+
 @media only screen and (min-width: 320px) and (max-width: 800px) {
-  header {
-    background: url('mobil/image-hero.jpg') no-repeat center center fixed;
+
+  .title-h1{
+   margin-left:60px;
+  }
+  
+  .btn-div {
+   display: none;
   }
 
+  
+  
+  .btn-div-mobil {
+    display: block;
+    margin-left:120px;
+  }
+
+ .mobil-image{
+   width: 100%;
+ 
+ }
+ .nav {
+  height: 5rem;
+  width: 100%;
+  display: block;
+  justify-content: flex-start;
+  z-index: 10;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+  position: fixed;
+}
   .square_home {
     width: 322px;
     height: 207px;
@@ -252,7 +345,6 @@ header {
   .title-side {
     width: 245px;
     height: 60px;
-
     top: 59px !important;
     font-weight: 300;
     font-size: 30px !important;
@@ -265,36 +357,19 @@ header {
     width: 277px !important;
     height: 175px !important;
     top: 1089px !important;
-    font-size: 15px !important;
     line-height: 25px !important;
     padding-left: 5px !important;
     padding-right: 25px;
     padding-top: 60px;
     text-align: center;
   }
-
-  .twotitle {
-    width: 358px;
-    height: 30px;
-    left: 56px;
-    top: 1393px;
-
-    padding-left: 60px;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 30px;
-    padding-bottom: 100px;
-  }
-
-  .wrapper {
+.wrapper {
     display: none;
   }
-
-  .three {
+.three {
     display: none;
   }
-
-  .footer {
+.footer {
     display: block;
     background-color: black;
     width: 100%;
@@ -310,19 +385,14 @@ header {
   .nav__listfootermobil {
     list-style: none;
     text-align: center;
-
     margin-top: 49px;
   }
 
   .nav__linkfootermobil {
     color: inherit;
     text-decoration: none;
-
     text-align: center;
-
-    font-family: 'Alata', sans-serif;
     padding: 16px 0;
-
     letter-spacing: 1px;
     line-height: 33px;
     font-weight: 300;
@@ -332,55 +402,26 @@ header {
 
   .nav__listiconmobil {
     list-style: none;
-
-    padding-top: 61px;
+    padding-top: 50px;
     padding-left: 110px;
   }
 
   .nav__itemiconmobil {
     float: left;
-
     margin-right: 10px;
-
     margin-left: 4px;
   }
 
   .footer-textmobil {
     padding-top: 50px;
     padding-left: 50px;
-    font-family: Alata;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
     line-height: 21px;
-    /* identical to box height */
-
     color: #696969;
   }
-
-  .twobutton {
-    position: absolute;
-    background-color: white;
-    color: black;
-    font-family: 'Alata', sans-serif;
-    width: 138px;
-    height: 34px;
-    left: 117px;
-    top: 2733px;
-  }
-  .twobutton:active {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-  }
-
   .wrappermobil {
     display: flex;
     flex-direction: column;
-
-    background-color: #fff;
   }
-
   .boxmobil {
     padding-top: 15px;
   }
@@ -388,134 +429,49 @@ header {
   .mobilimage {
     max-width: 350px !important;
     max-height: 400px !important;
-
     padding-left: 20px;
   }
   .boxtextdeepmobil {
-    position: absolute;
     width: 88px;
-    height: 50px;
     left: 49px;
-    top: 1647px;
-
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-
-    color: #fff;
+    top: 1620px;
   }
 
   .boxtextnightmobil {
-    position: absolute;
     width: 88px;
-    height: 50px;
     left: 49px;
-    top: 1787px;
-
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-
-    color: #fff;
+    top: 1760px;
   }
 
   .boxtextsoccermobil {
-    position: absolute;
     width: 200px;
-    height: 50px;
     left: 49px;
-    top: 1930px;
-
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-
-    color: #fff;
+    top: 1900px;
   }
   .boxtextgridmobil {
-    position: absolute;
     width: 77px;
-    height: 60px;
     left: 53px;
-    top: 2054px;
-
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-
-    color: #ffffff;
+    top: 2030px;
   }
   .boxtextabovemobil {
-    position: absolute;
     width: 254px;
-    height: 60px;
     left: 55px;
-    top: 2205px;
-
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-
-    color: #ffffff;
+    top: 2180px;
   }
   .boxtextpocketmobil {
-    position: absolute;
     width: 158px;
-    height: 60px;
     left: 50px;
-    top: 2340px;
-
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-
-    color: #ffffff;
+    top: 2320px;
   }
   .boxtextcuriositymobil {
-    position: absolute;
     width: 170px;
-    height: 60px;
     left: 55px;
-    top: 2480px;
-
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-
-    color: #ffffff;
+    top: 2450px;
   }
   .boxtextfishmobil {
-    position: absolute;
     width: 133px;
-    height: 60px;
     left: 50px;
-    top: 2620px;
-
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-
-    color: #ffffff;
+    top: 2600px;
   }
 }
 
@@ -550,7 +506,6 @@ header {
   text-decoration: none;
   margin-right: 50px;
   position: relative;
-  font-family: 'Alata', sans-serif;
   padding: 16px 0;
   margin: 0 12px;
   letter-spacing: 1px;
@@ -564,7 +519,6 @@ header {
   text-decoration: none;
   margin-right: 50px;
   position: relative;
-  font-family: 'Alata', sans-serif;
   padding: 16px 0;
   margin: 0 12px;
   letter-spacing: 1px;
@@ -576,11 +530,6 @@ header {
 .nav__listicon {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  margin-left: 55vh;
-  margin-top: -100px;
-  padding-left: 680px;
-  position: absolute;
 }
 .nav__itemicon {
   padding-left: 14px;
@@ -588,19 +537,8 @@ header {
 }
 
 .footer-text {
-  position: absolute;
-  width: 274px;
-  height: 21px;
-  left: 960px;
-
-
-  font-family: Alata;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+  padding-top:20px;
   line-height: 21px;
-  /* identical to box height */
-
   color: #696969;
 }
 
@@ -640,8 +578,6 @@ header {
   color: rgb(22, 8, 8);
   text-transform: uppercase;
   width: 25rem;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
 }
 
 .smalllogo {
@@ -686,14 +622,13 @@ a {
   }
 
   .smalllogo {
+    position: absolute;
     padding: 4.7vh 8vw;
     text-align: center;
     display: flex;
     align-items: center;
     color: #111;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
   }
 
   .logolink {
@@ -815,7 +750,6 @@ section {
 }
 
 .one {
-  background-color: white;
   width: 100px;
   margin: 0 auto;
   padding: 50px 0;
@@ -828,8 +762,6 @@ section {
   height: 388px;
   left: 720px;
   top: 1004px;
-
-  background: #fffdfd;
 }
 
 .imagecenter{
@@ -843,8 +775,6 @@ section {
 .title-side {
   text-align: center;
   padding-top: 84px;
-
-  font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 48px;
@@ -858,15 +788,8 @@ section {
   height: 108px;
   padding-left: 105px;
   top: 1209px;
-  font-family: 'Alata', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
   line-height: 21px;
   color: #8c8c8c;
-}
-.two {
-  background-color: white;
 }
 
 .three {
