@@ -6,6 +6,29 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.container__mobil{
+  display: none;
+}
+.box__image{
+  display: grid;
+  grid-template-columns: repeat(4,256px);
+  justify-content: center;
+  grid-gap: 1rem;
+}
+.box__link{
+  position: relative;
+}
+.box__title{
+  position: absolute;
+  bottom: 20px;
+  left: 1rem;
+  
+}
 .btn-div-footer {
   padding-right: 220px;
   padding-top:25px ;
@@ -23,7 +46,6 @@ html {
   font-size: 15px;
 }
 .card-css{
-  position: absolute;
   font-weight: 300;
   font-size: 30px;
   line-height: 30px;
@@ -34,23 +56,37 @@ html {
 .color-w{
     color: #ffffff;
 }
+.card-css-mobil{
+  font-weight: 300;
+font-size: 25px;
+line-height: 25px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+}
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
   .nav__listfooter{
-    padding-left: 100px!important;
+    padding-left: 100px;
   }
   .btn-div-footer{
-    padding-right: 0px!important;
+    padding-right: 0px;
   }
   .btn-div-icon {
     padding-right: 220px;
     padding-top:40px!important;
   }
   .footer-text {
-    padding-top:27px!important;
+    padding-top:27px;
     line-height: 21px;
     /* identical to box height */
     width: 500px;
     color: #696969;
+  }
+  .box__image{
+    display: grid;
+    grid-template-columns: repeat(3,256px);
+    justify-content: center;
+    grid-gap: 1rem;
   }
   .square_home{
     
@@ -59,7 +95,7 @@ html {
     margin-top:-130px;
     border: 2px solid #ffffff;
     box-sizing: border-box;
-    left:110px!important;
+    left:110px;
   }
   .square_home p {
     
@@ -67,10 +103,10 @@ html {
 }
 
 .side {
-  width: 309px !important;
-  height: 212px !important;
-  top:650px!important;
-  left: 280px !important;
+  max-width: 309px;
+  max-height: 150px ;
+  top:660px!important;
+  left: 250px !important;
 }
 
 .title-side {
@@ -92,30 +128,14 @@ html {
 }
 
 .imagecenter {
-  position: relative;
   width: 309px !important;
   height: 212px !important;
   left: 280px !important;
-  top: 450px !important;
+  top: 445px !important;
 }
 
 .one{
   min-height: 550px;
-}
-
-.wrapper{
-  display: grid!important;
-  margin-bottom: 0px!important;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 260px))!important;
-  color: #444;
-  padding: 0 195px!important;
-  
-}
-
-
-.box h4 {
-  display: none!important;
- 
 }
 }
 /* media only 800-1200 end*/
@@ -190,87 +210,23 @@ html {
   padding-top:20px;
 }
 
-
-.wrapper {
-  display: grid;
-  margin-bottom: 333px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
-  grid-gap: 10px;
-  color: #444;
-  padding: 0 195px;
-}
-
-.wrappermobil {
-  display: none;
-}
-
-.box {
-  width: 256px;
-  height: 450px;
-  left: 165px;
-}
-
-.box img {
+.box__link img {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-.box:hover img {
+.box__link:hover img {
   opacity:0.8;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
-.box:hover h4 {
+.box__title:hover h4 {
   opacity:0.8;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
-
-.boxtextdeep {
-  width: 106px;
-  left: 204px;
-  top: 2000px;
-}
-
-.boxtextnight {
-  width: 131px;
-  left: 490px;
-  top: 2000px;
-}
-
-.boxtextsoccer {
-  width: 244px;
-  left: 761px;
-  top: 2000px;
-}
-.boxtextgrid { 
-  width: 77px;
-  left: 1033px;
-  top: 2000px;
-}
-.boxtextabove {
-  width: 254px;
-  left: 195px;
-  top: 2480px;
-}
-.boxtextpocket {
-  width: 158px;
-  left: 480px;
-  top: 2480px;
-}
-.boxtextcuriosity {
-  width: 170px;
-  left: 755px;
-  top: 2480px;
-}
-.boxtextfish {
-  width: 133px;
-  left: 1023px;
-  top: 2480px;
-}
-
 .footer {
   display: none;
 }
@@ -281,7 +237,6 @@ html {
 
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
-
   .title-h1{
    margin-left:60px;
   }
@@ -289,8 +244,27 @@ html {
   .btn-div {
    display: none;
   }
-
-  
+.container{
+  display: none;
+}
+  .container__mobil{
+    max-width: 375px;
+    display: block;
+    margin: 0 auto;
+  }
+  .mobilimage {
+    max-width: 350px !important;
+    max-height: 400px !important;
+    padding-left: 20px;
+  }
+  .box__link__mobil{
+    position: relative;
+  }
+  .box__title__mobil{
+    position: absolute;
+    bottom: 20px;
+    left: 2rem;
+  }
   
   .btn-div-mobil {
     display: block;
@@ -363,9 +337,6 @@ html {
     padding-top: 60px;
     text-align: center;
   }
-.wrapper {
-    display: none;
-  }
 .three {
     display: none;
   }
@@ -418,61 +389,7 @@ html {
     line-height: 21px;
     color: #696969;
   }
-  .wrappermobil {
-    display: flex;
-    flex-direction: column;
-  }
-  .boxmobil {
-    padding-top: 15px;
-  }
 
-  .mobilimage {
-    max-width: 350px !important;
-    max-height: 400px !important;
-    padding-left: 20px;
-  }
-  .boxtextdeepmobil {
-    width: 88px;
-    left: 49px;
-    top: 1620px;
-  }
-
-  .boxtextnightmobil {
-    width: 88px;
-    left: 49px;
-    top: 1760px;
-  }
-
-  .boxtextsoccermobil {
-    width: 200px;
-    left: 49px;
-    top: 1900px;
-  }
-  .boxtextgridmobil {
-    width: 77px;
-    left: 53px;
-    top: 2030px;
-  }
-  .boxtextabovemobil {
-    width: 254px;
-    left: 55px;
-    top: 2180px;
-  }
-  .boxtextpocketmobil {
-    width: 158px;
-    left: 50px;
-    top: 2320px;
-  }
-  .boxtextcuriositymobil {
-    width: 170px;
-    left: 55px;
-    top: 2450px;
-  }
-  .boxtextfishmobil {
-    width: 133px;
-    left: 50px;
-    top: 2600px;
-  }
 }
 
 .nav {
